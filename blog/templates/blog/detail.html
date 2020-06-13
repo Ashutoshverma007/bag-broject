@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>Ashutosh Verma</title>
+    <title>{{blog.title}}</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
@@ -54,7 +55,7 @@
         <div class="navbar-nav ml-auto">
 
           <a class="nav-item nav-link" href="{%static 'Ashutosh BE - for merge-converted.pdf'%}">Resume</a>
-          <a class="nav-item nav-link" href="{%url 'allblogs'%}">Blog</a>
+          <a class="nav-item nav-link active" href="{%url 'allblogs'%}">Blog</a>
 
         </div>
       </div>
@@ -62,43 +63,20 @@
 </header>
 
 <main role="main">
-
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1>Hi,I'm Ashutosh.</h1>
-      <p class="lead text-muted">Hi, my name is ashutosh i have completed Engineering in E&TC and i love to make Django website, It's the thrill of handling requests that the pepole want!! </p>
-
-        <p>
-
-        <a href="mailto:imverma4u@gmail.com" target="http://gmail.com" class="btn btn-primary">Email Us</a>
-        </p>
-        <img class="img-fluid " src="{% static 'GettyImages-1145631842-1b9c34d2fbeb4f02a533acc23146395d.jpg' %}" height=300 width=800 />
+  <div class="container">
 
 
 
-    </div>
-  </section>
+  <h1 class="text-center pt-3" >{{blog.title}}</h1>
+    <p class="text-center pt-2"> {{blog.pub_date }} </p>
+  <img class="img-fluid " src="{{blog.image.url}}" height=100 width=1300 />
+  <br />
+  <br />
 
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row">
-     {% for job in jobs.all %}
+  <p >{{ blog.body }}</p>
 
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src = "{{job.image.url}}" />
-            <div class="card-body">
-              <p class="card-text">{{job.summary  }} </p>
-
-            </div>
-          </div>
-        </div>
-      {%endfor%}
-      </div>
-    </div>
   </div>
-
-</main>
+  </main>
 
 <footer class="text-muted">
   <div class="container text-center">
