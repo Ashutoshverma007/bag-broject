@@ -54,7 +54,7 @@
         <div class="navbar-nav ml-auto">
 
 
-        
+
 
           <a class="nav-item nav-link btn btn-outline-dark" href="{%static 'Ashutosh BE - for merge-converted.pdf'%}">Resume</a>
           <a class="nav-item nav-link" href="{%url 'allblogs'%}">Blog</a>
@@ -93,7 +93,7 @@
             <img class="card-img-top" src = "{{job.image.url}}" height=100 width=100 />
             <div class="card-body">
               <p class="card-text">{{job.summary  }} </p>
-
+               <h4 class="card-text">{{job.url}}</h4>
             </div>
           </div>
         </div>
