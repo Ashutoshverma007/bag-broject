@@ -58,7 +58,7 @@
 
           <a class="nav-item nav-link btn btn-outline-dark" href="{%static 'Ashutosh BE - for merge-converted.pdf'%}">Resume</a>
           <a class="nav-item nav-link" href="{%url 'allblogs'%}">Blog</a>
-           <a class="nav-item nav-link" href="{%url 'allblogs'%}">linkedin</a>
+           <a class="nav-item nav-link" href="https://www.linkedin.com/feed/">Linkedin</a>
 
         </div>
       </div>
@@ -85,18 +85,20 @@
 
   <div class="album py-5 bg-light">
     <div class="container">
+      <h2 "text-center"> Admission Open In Top Engineering & Medical Colleges </h2>
       <div class="row">
      {% for job in jobs.all %}
 
         <div class="col-md-4" >
           <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" src = "{{job.image.url}}" height=100 width=100 />
+            <img class="card-img-top" src = "{{job.image.url}}" height=150 width=100 />
             <div class="card-body">
               <p class="card-text">{{job.summary  }} </p>
 
             </div>
           </div>
         </div>
+
       {%endfor%}
       </div>
     </div>
