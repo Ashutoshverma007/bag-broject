@@ -78,16 +78,14 @@
 
 
         <img class="img-fluid" src="{% static 'GettyImages-1145631842-1b9c34d2fbeb4f02a533acc23146395d.jpg' %}" height=300 width=1000 />
-
-
-    </div>
+      </div>
   </section>
-
     <div class="album py-5 bg-light pt-0">
     <div class="container pt-0">
-    <div class="row text-center" <h2> Admission Open In Top Engineering & Medical Colleges </h2> </div>
+      <div class="container text-center pt-1">
+     <p class="lead text-muted"> Admission Open In Top Engineering & Medical Colleges </p> </div>
       <div class="row">
-     {% for job in jobs.all %}
+         {% for job in jobs.all %}
 
         <div class="col-md-4" >
           <div class="card mb-4 shadow-sm">
@@ -109,9 +107,6 @@
 <footer class="text-muted">
   <div class="container text-center">
     <p>@CopyRight Ashutosh verma {% now "Y" %} </p>
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
       </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
