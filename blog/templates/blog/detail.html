@@ -61,28 +61,18 @@
       </div>
     </nav>
 </header>
+ <main role="main">
+    <div class="container text-justify">
 
-  <main role="main">
-
-  <div class="container text-break">
-
-
-
-   <h1 class="text-center pt-3" >{{blog.title}}</h1>
-    <p class="text-center pt-2"> {{blog.pub_date }} </p>
-  <img class="img-fluid " src="{{blog.image.url}}" height=100 width=1100 />
+       <h1 class="text-center pt-3" >{{blog.title}}</h1>
+          <p class="text-center pt-2"> {{blog.pub_date }} </p>
+            <img class="img-fluid " src="{{blog.image.url}}" height=100 width=1100 />
   <br />
   <br />
 
-  <div class="text-break">
-   <p class="text-break">{{ blog.body }}</p>
-  </div>
+           <p class="text-justify">{{ blog.body }}</p>
 </div>
-
-
-
-
-  </main>
+    </main>
 
 <footer class="text-muted">
   <div class="container text-center">
