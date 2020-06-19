@@ -54,7 +54,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
 
-          <a class="nav-item nav-link" href="{%static 'Ashutosh BE - for merge-converted.pdf'%}">Resume</a>
+          <a class="nav-item nav-link active" href="{%static 'Ashutosh BE - for merge-converted.pdf'%}">Resume</a>
           <a class="nav-item nav-link active" href="{%url 'allblogs'%}">Blog</a>
 
         </div>
@@ -72,9 +72,9 @@
   <img class="img-fluid " src="{{blog.image.url}}" height=100 width=1100 />
   <br />
   <br />
-  <div class="text-wrap">
+  <div class="container">
 
-  <p>{{ blog.body }}</p>
+  <p class="text-justify">{{ blog.body }}</p>
   </div>
   </div>
   </main>
